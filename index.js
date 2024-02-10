@@ -4,7 +4,7 @@ const session = require('express-session')
 const studentsRouter = require('./routers/studentsRouter')
 
 require('./config/db') //connection to DB
-const PORT = 8000
+const PORT = process.env.PORT || 8000
 const app = express()
 
 
